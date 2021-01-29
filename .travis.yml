@@ -2,11 +2,9 @@ language: csharp
 solution: ./SpeakerMeet.sln 
 dist: bionic
 mono: none
-dotnet: 3.1
+dotnet: 5.0
 install: 
     - dotnet restore
 script:
     - dotnet build
-    - dotnet test
-    - dotnet build
-    - dotnet test ./SpeakerMeet.API.Tests/SpeakerMeet.API.Tests.csproj 
+    - dotnet test ./SpeakerMeet.API.Tests/SpeakerMeet.API.Tests.csproj  
